@@ -26,13 +26,6 @@ const avatarOnClick = function ({ key }) {
 };
 const menu = (
   <Menu onClick={avatarOnClick}>
-    <Menu.Item key="0">
-      <a href="http://www.alipay.com/">支付宝</a>
-    </Menu.Item>
-    <Menu.Item key="1">
-      <a href="http://www.taobao.com/">淘宝</a>
-    </Menu.Item>
-    <Menu.Divider />
     <Menu.Item key="logout">
       <Icon type="logout" /> 退出登录
     </Menu.Item>
