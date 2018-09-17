@@ -40,6 +40,7 @@
           </div> -->
 
           <!-- 最新文章 -->
+          @if(count($articles) > 0)
           @foreach($articles as $article)
           <div class="z-article-vertical">
               <img src="{{ $article->cover == '' ? 'default.jpg' : $article->cover }}" class="img-responsive z-cover" alt="imax1">
@@ -59,6 +60,9 @@
               </div>
           </div>
           @endforeach
+          @else
+          	<h4 style="text-align: center;">暂无文章</h4>
+          @endif
         </div>
         <!-- <div class="col-md-4">
 
